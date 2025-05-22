@@ -1,7 +1,7 @@
-fastapi
-uvicorn
-gunicorn
-python-dotenv
-requests
-tensorflow
-pillow
+fastapi==0.109.1
+uvicorn==0.27.0
+gunicorn==21.2.0
+python-dotenv==1.0.0
+requests==2.31.0
+tensorflow==2.15.0  # or your specific version
+Pillow==10.1.0
