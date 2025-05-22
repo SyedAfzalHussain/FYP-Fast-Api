@@ -1,3 +1,4 @@
+import uvicorn
 from fastapi import FastAPI, UploadFile, File, HTTPException
 import base64
 import requests
@@ -88,3 +89,6 @@ async def predict(file: UploadFile = File(...)):
         return {"error": e.detail}
     except Exception as e:
         return {"error": f"Internal server error: {str(e)}"}
+if __name__ == "__main__":
+    port = int(os.environ.get("PORT", 8000))
+    uvicorn.run(app, host="0.0.0.0", port=port)
