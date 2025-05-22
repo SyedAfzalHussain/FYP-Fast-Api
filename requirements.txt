@@ -3,3 +3,5 @@ uvicorn
 gunicorn
 python-dotenv
 requests
+tensorflow
+pillow
